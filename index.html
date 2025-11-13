@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recover thousands in FICA Tip Tax Credits with Tip Tax Partner. Most restaurants miss out on this substantial tax credit. Get funded in weeks - no upfront costs.">
+    <meta name="keywords" content="FICA tip credit, tip tax credit, restaurant tax credit, hospitality tax credit, tip credit partners, tax refund">
+    <meta name="author" content="Tip Tax Partner">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recover Thousands in FICA Tip Tax Credits | Tip Tax Partner">
+    <meta property="og:description" content="Get your money back! We help restaurants and hospitality businesses claim substantial FICA tip tax credits. No upfront costs, funded in weeks.">
+    <meta property="og:image" content="https://tipcreditpartners.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recover Thousands in FICA Tip Tax Credits | Tip Tax Partner">
+    <meta name="twitter:description" content="Get your money back! We help restaurants claim FICA tip tax credits with no upfront costs.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tipcreditpartners.com/">
+
+    <title>Recover Thousands in FICA Tip Tax Credits | Tip Tax Partner</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Tip Tax Partner",
+      "description": "FICA Tip Tax Credit recovery services for restaurants and hospitality businesses",
+      "url": "https://tipcreditpartners.com",
+      "priceRange": "No upfront costs",
+      "areaServed": "United States",
+      "serviceType": "Tax Credit Recovery"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0891B2;
+            --primary-dark: #0E7490;
+            --secondary-color: #1E293B;
+            --accent-color: #06B6D4;
+            --text-dark: #1E293B;
+            --text-light: #64748B;
+            --bg-light: #F8FAFC;
+            --white: #FFFFFF;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            gap: 2rem;
+        }
+
+        .logo {
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-cta {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.625rem 1.25rem;
+            margin: 0.5rem 0;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            display: inline-block;
+            line-height: normal;
+        }
+
+        .nav-cta:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(14, 116, 144, 0.95) 0%, rgba(8, 145, 178, 0.95) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231E293B" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></svg>');
+            background-size: 50px 50px;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Info Cards Section */
+        .info-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Eligibility Section */
+        .eligibility-section {
+            background: var(--bg-light);
+            padding: 60px 20px;
+        }
+
+        .eligibility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .eligibility-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .eligibility-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .eligibility-card h3::before {
+            content: '📋';
+            font-size: 1.5rem;
+        }
+
+        .eligibility-card p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .eligibility-card .examples {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .eligibility-card .examples strong {
+            color: var(--text-dark);
+        }
+
+        /* Requirements */
+        .requirements {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .requirements h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .requirements ul {
+            list-style: none;
+        }
+
+        .requirements li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-light);
+        }
+
+        .requirements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .step p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 60px 20px;
+        }
+
+        .why-choose .section-header h2,
+        .why-choose .section-header p {
+            color: var(--white);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .benefit {
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefit-icon {
+            display: none;
+        }
+
+        .benefit h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .benefit p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 60px 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 20px;
+            background: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-section .cta-button {
+            background: var(--white);
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            padding: 1.25rem 3rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 40px 20px 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Pulse Animation */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* Tablet Optimization */
+        @media (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transition: left 0.3s ease;
+                gap: 1.5rem;
+                align-items: flex-start;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.9rem 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .info-cards,
+            .eligibility-grid,
+            .steps,
+            .benefits-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat h3 {
+                font-size: 2.5rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .cta-section .cta-button {
+                font-size: 1.1rem;
+                padding: 1rem 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .nav-cta {
+                padding: 0.5rem 1rem;
+                margin: 0.375rem 0;
+                font-size: 0.85rem;
+            }
+
+            .card,
+            .eligibility-card,
+            .faq-item {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading optimization */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="/" class="logo"><img src="banner.png" alt="Tip Tax Partner"></a>
+            <div class="nav-links">
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="nav-cta">Get Started</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Recover Thousands in FICA Tip Tax Credits</h1>
+            <p>Most restaurants miss out on this substantial tax credit. We've helped businesses claim over $1 billion.</p>
+            <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button">Get Your Money Back - Start Here</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>The FICA Tip Credit You're Missing Out On</h2>
+                <p>Most restaurant and bar owners don't realize they're eligible for this substantial tax credit. Here's what you need to know:</p>
+            </div>
+
+            <div class="info-cards">
+                <div class="card scale-in stagger-1">
+                    <div class="card-icon">📄</div>
+                    <h3>What Is It</h3>
+                    <p>A dollar-for-dollar tax credit for employers who pay FICA taxes on employee tips. This is NOT a deduction—it's a direct reduction of your tax bill.</p>
+                </div>
+
+                <div class="card scale-in stagger-2">
+                    <div class="card-icon">👥</div>
+                    <h3>Who Qualifies</h3>
+                    <p>Restaurants, bars, hotels, and any hospitality business with tipped employees. If your staff receives tips, you likely eligible.</p>
+                </div>
+
+                <div class="card scale-in stagger-3">
+                    <div class="card-icon">💰</div>
+                    <h3>How Much</h3>
+                    <p>Up to 7.65% of qualified tip income. For a restaurant with 20 tipped employees, this can mean $20,000+ per year in credits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section class="eligibility-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Is Your Business Eligible?</h2>
+                <p>Many hospitality businesses qualify for the FICA Tip Credit but don't realize it. See if your business type is eligible:</p>
+            </div>
+
+            <div class="eligibility-grid">
+                <div class="eligibility-card">
+                    <h3>Full-Service Restaurants</h3>
+                    <p>Establishments where servers take orders and bring food to tables, including fine dining, casual dining, and family restaurants.</p>
+                    <div class="examples"><strong>Examples:</strong> Steakhouses, Italian restaurants, diners, etc.</div>
+                </div>
+
+                <div class="eligibility-card">
+                    <h3>Bars & Nightclubs</h3>
+                    <p>Establishments primarily serving alcoholic beverages where bartenders and servers receive tips from customers.</p>
+                    <div class="examples"><strong>Examples:</strong> Sports bars, cocktail lounges, pubs, nightclubs</div>
+                </div>
+
+                <div class="eligibility-card">
+                    <h3>Hotels & Resorts</h3>
+                    <p>Hospitality businesses where bellhops, room service staff, concierge, and other employees receive tips.</p>
+                    <div class="examples"><strong>Examples:</strong> Luxury hotels, boutique hotels, resorts, motels</div>
+                </div>
+
+                <div class="eligibility-card">
+                    <h3>Catering Companies</h3>
+                    <p>Businesses that provide food service at remote sites where staff receives tips from clients or guests.</p>
+                    <div class="examples"><strong>Examples:</strong> Wedding caterers, corporate caterers, private chefs</div>
+                </div>
+
+                <div class="eligibility-card">
+                    <h3>Coffee Shops & Cafes</h3>
+                    <p>Establishments serving beverages and light meals where baristas and counter staff receive tips.</p>
+                    <div class="examples"><strong>Examples:</strong> Coffee houses, bakery cafes, breakfast spots</div>
+                </div>
+
+                <div class="eligibility-card">
+                    <h3>Other Qualifying Businesses</h3>
+                    <p>Various service establishments where employees customarily receive tips from customers.</p>
+                    <div class="examples"><strong>Examples:</strong> Cruise ships, casino restaurants, food delivery services</div>
+                </div>
+            </div>
+
+            <div class="requirements">
+                <h3>Key Eligibility Requirements:</h3>
+                <ul>
+                    <li>Your business must have employees who receive tips from customers</li>
+                    <li>You must pay FICA taxes (Social Security and Medicare) on those reported tips</li>
+                    <li>Your employees must report their tip income to you as the employer</li>
+                    <li>The business must have filed the appropriate tax forms (Forms 941, 8027, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>How It Works</h2>
+                <p>Our streamlined process makes claiming your FICA tip credit simple and hassle-free</p>
+            </div>
+
+            <div class="steps">
+                <div class="step fade-in-left stagger-1">
+                    <div class="step-number">1</div>
+                    <h3>Simple Application</h3>
+                    <p>Fill out our quick form with basic information about your business</p>
+                </div>
+
+                <div class="step fade-in-left stagger-2">
+                    <div class="step-number">2</div>
+                    <h3>Our CPAs Process Your Claim</h3>
+                    <p>Our tax specialists handle all paperwork and IRS requirements</p>
+                </div>
+
+                <div class="step fade-in-left stagger-3">
+                    <div class="step-number">3</div>
+                    <h3>Receive Approval</h3>
+                    <p>We work with the IRS to get your claim approved quickly</p>
+                </div>
+
+                <div class="step fade-in-left stagger-4">
+                    <div class="step-number">4</div>
+                    <h3>Get Funded in Weeks</h3>
+                    <p>Receive your credit in weeks, not months</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button pulse-animation">Get Your Money Back - Start Here</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="benefits" class="why-choose">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Tip Tax Partner</h2>
+                <p>We specialize exclusively in maximizing FICA tip credits for the hospitality industry</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit fade-in stagger-1">
+                    <div class="benefit-icon float-animation">🎯</div>
+                    <h3>Expertise</h3>
+                    <p>Our tax specialists have processed over $1 billion in FICA tip credits, ERTC funds, and Visa/Mastercard Settlements. We handle everything from start to finish.</p>
+                </div>
+
+                <div class="benefit fade-in stagger-2">
+                    <div class="benefit-icon float-animation">⚡</div>
+                    <h3>Speed</h3>
+                    <p>While others take months, we get you funded within weeks through our streamlined process</p>
+                </div>
+
+                <div class="benefit fade-in stagger-3">
+                    <div class="benefit-icon float-animation">💎</div>
+                    <h3>Maximized Returns</h3>
+                    <p>Our proprietary methods ensure you get every dollar you deserve, often 30% more than DIY approaches</p>
+                </div>
+
+                <div class="benefit fade-in stagger-4">
+                    <div class="benefit-icon float-animation">🛡️</div>
+                    <h3>Zero Upfront Costs</h3>
+                    <p>You pay only when you receive your credit—no risk, no hidden fees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <h3>$1B+</h3>
+                    <p>In Claims Processed</p>
+                </div>
+
+                <div class="stat">
+                    <h3>1000+</h3>
+                    <p>Businesses Helped</p>
+                </div>
+
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Compliance Rate</p>
+                </div>
+
+                <div class="stat">
+                    <h3>50</h3>
+                    <p>States Covered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the FICA Tip Credit</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">What is the FICA Tip Credit?</div>
+                    <div class="faq-answer">The FICA Tip Credit is a dollar-for-dollar tax credit available to employers who pay FICA taxes on employee tips. This is NOT a deduction—it's a direct reduction of your tax bill.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How much can my business claim?</div>
+                    <div class="faq-answer">Up to 7.65% of qualified tip income. For a restaurant with 20 tipped employees, this can mean $20,000+ per year in credits. The exact amount depends on your business type, number of employees, and reported tips.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Is my business eligible?</div>
+                    <div class="faq-answer">If you operate a restaurant, bar, hotel, or any hospitality business with tipped employees, you likely qualify. The key requirement is that you pay FICA taxes on reported tips.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How long does the process take?</div>
+                    <div class="faq-answer">Our streamlined process typically gets you funded within weeks, not months. We handle all the paperwork and IRS requirements, so you can focus on running your business.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Can I claim the credit for past years?</div>
+                    <div class="faq-answer">Yes! You can claim retroactively for previous tax years. Many of our clients receive substantial refunds for multiple years of unclaimed credits.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Is there a fee for your service?</div>
+                    <div class="faq-answer">We operate on a success-based model—you only pay when you receive your credit. There are no upfront costs or hidden fees.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How does this credit affect other tax incentives?</div>
+                    <div class="faq-answer">The FICA Tip Credit can be claimed alongside other tax credits and deductions. Our tax specialists ensure you maximize all available tax benefits without conflicts.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Do I need to reduce my wage deduction?</div>
+                    <div class="faq-answer">Yes, you must reduce your wage deduction by the amount of the credit claimed. However, the credit is typically more valuable than the deduction, resulting in a net tax benefit.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">What documentation do I need to provide?</div>
+                    <div class="faq-answer">You'll need your business tax returns, payroll records showing tipped wages, Form 941 quarterly tax returns, and Form 8027 (Employer's Annual Information Return of Tip Income). Our team will guide you through the entire documentation process.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Will claiming this credit trigger an IRS audit?</div>
+                    <div class="faq-answer">The FICA Tip Credit is a legitimate, IRS-approved tax benefit. When properly documented and filed, it does not increase your audit risk. Our CPAs ensure full compliance with all IRS requirements.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Can franchise businesses claim this credit?</div>
+                    <div class="faq-answer">Yes! Both independent restaurants and franchise locations are eligible for the FICA Tip Credit, as long as they have tipped employees and meet the other eligibility requirements.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">What if my employees don't report all their tips?</div>
+                    <div class="faq-answer">The credit applies only to reported tips on which you've paid FICA taxes. We can help you implement better tip reporting systems to maximize your credit going forward.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">How far back can I claim the FICA Tip Credit?</div>
+                    <div class="faq-answer">Generally, you can file amended returns to claim the credit for up to 3 years back. This means you could recover credits from multiple prior tax years.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Does this work for seasonal businesses?</div>
+                    <div class="faq-answer">Absolutely! Seasonal restaurants, resorts, and hospitality businesses can claim the FICA Tip Credit for the periods when they employ tipped workers.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Can I claim this if I already have a CPA?</div>
+                    <div class="faq-answer">Yes! Many CPAs don't specialize in the FICA Tip Credit. We can work alongside your existing CPA to ensure you receive this valuable benefit while they handle your other tax needs.</div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">What makes Tip Tax Partner different from other services?</div>
+                    <div class="faq-answer">We specialize exclusively in hospitality tax credits with over $1 billion processed. Our proprietary methods maximize returns, our process is faster than competitors, and we only get paid when you do.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Claim Your Tax Credit?</h2>
+            <p>Join thousands of satisfied restaurant and bar owners who've recovered significant tax credits</p>
+            <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button">Get Your Money Back - Start Here</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tip Tax Partner</h3>
+                    <p>Specializing in ERTC, Visa/Mastercard and FICA tip credits for small businesses.</p>
+                    <p style="margin-top: 1rem;">📧 support@tipcreditpartners.com</p>
+                    <p>📞 1-800-TIP-CREDIT</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="https://app.tipcreditpartners.com/register-client/hqxo">Get Started</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tip Tax Partner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('nav')) {
+                    mobileMenuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            });
+        }
+
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .scale-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animated Counter for Stats
+        const animateCounter = (element, target, duration = 2000) => {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    element.textContent = Math.floor(current).toLocaleString();
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            };
+
+            updateCounter();
+        };
+
+        // Stats Counter Animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    const stat = entry.target.querySelector('h3');
+                    const text = stat.textContent;
+
+                    // Extract number from text like "$1B+" or "1000+"
+                    if (text.includes('$1B')) {
+                        stat.textContent = '$1B+';
+                    } else if (text.includes('1000')) {
+                        let num = 0;
+                        const interval = setInterval(() => {
+                            num += 50;
+                            if (num >= 1000) {
+                                stat.textContent = '1000+';
+                                clearInterval(interval);
+                            } else {
+                                stat.textContent = num + '+';
+                            }
+                        }, 30);
+                    } else if (text.includes('100%')) {
+                        let num = 0;
+                        const interval = setInterval(() => {
+                            num += 5;
+                            if (num >= 100) {
+                                stat.textContent = '100%';
+                                clearInterval(interval);
+                            } else {
+                                stat.textContent = num + '%';
+                            }
+                        }, 30);
+                    } else if (text.includes('50')) {
+                        let num = 0;
+                        const interval = setInterval(() => {
+                            num += 2;
+                            if (num >= 50) {
+                                stat.textContent = '50';
+                                clearInterval(interval);
+                            } else {
+                                stat.textContent = num;
+                            }
+                        }, 40);
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat').forEach(stat => {
+            statsObserver.observe(stat);
+        });
+
+        // Add hover effect to CTA buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+
+            button.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect on scroll
+        let lastScrollY = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            if (hero && scrollY < hero.offsetHeight) {
+                hero.style.backgroundPositionY = scrollY * 0.5 + 'px';
+            }
+        });
+
+        // Add active state to nav links based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinksAll = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinksAll.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Interactive card tilt effect (subtle)
+        document.querySelectorAll('.card, .eligibility-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+
+        // FAQ Accordion functionality (optional enhancement)
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.style.cursor = 'pointer';
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.maxHeight;
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.style.maxHeight = null;
+                    a.style.marginTop = '0';
+                });
+
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.marginTop = '0.75rem';
+                }
+            });
+        });
+
+        // Initialize all FAQ answers as open
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        });
+
+        // Add entrance animation to hero content
+        window.addEventListener('load', () => {
+            const heroContent = document.querySelector('.hero-content');
+            if (heroContent) {
+                heroContent.style.opacity = '0';
+                heroContent.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    heroContent.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    heroContent.style.opacity = '1';
+                    heroContent.style.transform = 'translateY(0)';
+                }, 200);
+            }
+        });
+
+        // Console easter egg
+        console.log('%c💰 Tip Tax Partner', 'color: #0891B2; font-size: 20px; font-weight: bold;');
+        console.log('%cRecover thousands in FICA Tip Tax Credits!', 'color: #64748B; font-size: 14px;');
+    </script>
+</body>
+</html>

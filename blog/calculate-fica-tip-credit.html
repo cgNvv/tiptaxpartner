@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide to calculating your FICA tip tax credit. Learn the formula, see examples, and avoid common calculation mistakes.">
+    <meta name="keywords" content="calculate FICA tip credit, Form 8846 calculation, tip credit formula, restaurant tax credit calculator">
+    <title>How to Calculate Your FICA Tip Tax Credit | Step-by-Step Guide</title>
+    <link rel="canonical" href="https://tipcreditpartners.com/blog/calculate-fica-tip-credit">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-color: #0891B2; --primary-dark: #0E7490; --secondary-color: #1E293B; --text-dark: #1E293B; --text-light: #64748B; --bg-light: #F8FAFC; --white: #FFFFFF; --border-radius: 8px; }
+        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--text-dark); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--white); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; gap: 2rem; }
+        .logo { text-decoration: none; display: flex; align-items: center; }
+        .logo img { height: 40px; width: auto; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-link { color: var(--text-dark); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: var(--white); padding: 0.625rem 1.25rem; margin: 0.5rem 0; border-radius: var(--border-radius); text-decoration: none; font-weight: 600; font-size: 0.95rem; white-space: nowrap; display: inline-block; }
+        .breadcrumbs { padding: 1.5rem 20px; background: var(--bg-light); }
+        .breadcrumbs a { color: var(--primary-color); text-decoration: none; }
+        .breadcrumbs span { color: var(--text-light); margin: 0 0.5rem; }
+        .article-header { background: linear-gradient(135deg, rgba(14, 116, 144, 0.95) 0%, rgba(8, 145, 178, 0.95) 100%); color: var(--white); padding: 60px 20px; }
+        .article-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .article-content { padding: 60px 20px; background: var(--white); }
+        .content-wrapper { max-width: 850px; margin: 0 auto; }
+        .content-wrapper h2 { font-size: 1.75rem; color: var(--primary-color); margin: 2.5rem 0 1rem 0; }
+        .content-wrapper h3 { font-size: 1.35rem; color: var(--text-dark); margin: 2rem 0 1rem 0; }
+        .content-wrapper p { color: var(--text-light); margin-bottom: 1.25rem; line-height: 1.8; font-size: 1.05rem; }
+        .content-wrapper ul, .content-wrapper ol { margin: 1.5rem 0 1.5rem 2rem; color: var(--text-light); }
+        .content-wrapper li { margin-bottom: 0.75rem; line-height: 1.8; }
+        .content-wrapper strong { color: var(--text-dark); font-weight: 600; }
+        .formula-box { background: #F3E8FF; border: 3px solid #A855F7; padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .step-box { background: #DBEAFE; border-left: 4px solid var(--primary-color); padding: 1.5rem; margin: 1.5rem 0; border-radius: var(--border-radius); }
+        .example-box { background: #D1FAE5; border: 2px solid #10B981; padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .warning-box { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 1.5rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .cta-box { background: linear-gradient(135deg, var(--primary-color), #06B6D4); color: var(--white); padding: 2.5rem; border-radius: var(--border-radius); text-align: center; margin: 3rem 0; }
+        .cta-button { display: inline-block; background: var(--white); color: var(--primary-color); padding: 1rem 2.5rem; border-radius: var(--border-radius); text-decoration: none; font-weight: 700; }
+        footer { background: var(--secondary-color); color: var(--white); padding: 40px 20px 20px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo"><img src="../banner.png" alt="Tip Tax Partner"></a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../faq.html" class="nav-link">FAQ</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="nav-cta">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="../index.html">Home</a> <span>/</span> <a href="../blog.html">Blog</a> <span>/</span> <span>Calculate FICA Tip Credit</span>
+        </div>
+    </div>
+
+    <section class="article-header">
+        <div class="container">
+            <h1>How to Calculate Your FICA Tip Tax Credit</h1>
+            <div class="article-meta" style="font-size: 1rem; opacity: 0.95;">
+                <span>7 min read</span> • <span>Calculation Guide</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-content">
+        <div class="content-wrapper">
+            <p class="lead" style="font-size: 1.2rem; font-weight: 500; color: var(--text-dark);">Calculating the FICA Tip Tax Credit may seem complicated at first, but once you understand the formula, it becomes straightforward. This guide will walk you through the exact calculation process with real examples, so you can estimate how much your restaurant qualifies for.</p>
+
+            <h2>The Basic Formula</h2>
+
+            <div class="formula-box">
+                <h3 style="color: #7C3AED; margin-top: 0; text-align: center;">FICA Tip Credit Formula</h3>
+                <p style="text-align: center; font-size: 1.2rem; margin: 1.5rem 0;"><strong>Credit = (Creditable Tips) × 7.65%</strong></p>
+                <p style="text-align: center; margin-bottom: 0;">Where <strong>Creditable Tips</strong> = Total Tips - (Minimum Wage Requirement - Cash Wages Paid)</p>
+            </div>
+
+            <p>Let's break this down into simple steps.</p>
+
+            <h2>Step-by-Step Calculation Process</h2>
+
+            <div class="step-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">Step 1: Gather Your Data</h3>
+                <p style="margin-bottom: 0;">For each tipped employee, you need:</p>
+                <ul style="margin: 1rem 0 0 2rem;">
+                    <li><strong>Total hours worked</strong> during the year</li>
+                    <li><strong>Cash wages paid</strong> to the employee</li>
+                    <li><strong>Total tips reported</strong> by the employee</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">Step 2: Calculate the Minimum Wage Requirement</h3>
+                <p style="margin-bottom: 0;">Multiply hours worked by $7.25 (federal minimum wage):</p>
+                <p style="margin: 0.5rem 0 0 0;"><strong>Minimum Wage Requirement = Hours × $7.25</strong></p>
+            </div>
+
+            <div class="step-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">Step 3: Determine the Gap</h3>
+                <p style="margin-bottom: 0;">Calculate how much additional money is needed to reach minimum wage:</p>
+                <p style="margin: 0.5rem 0 0 0;"><strong>Gap = Minimum Wage Requirement - Cash Wages Paid</strong></p>
+            </div>
+
+            <div class="step-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">Step 4: Find Creditable Tips</h3>
+                <p style="margin-bottom: 0;">Subtract the gap from total tips:</p>
+                <p style="margin: 0.5rem 0 0 0;"><strong>Creditable Tips = Total Tips - Gap</strong></p>
+            </div>
+
+            <div class="step-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">Step 5: Calculate the Credit</h3>
+                <p style="margin-bottom: 0;">Multiply creditable tips by 7.65% (the employer FICA rate):</p>
+                <p style="margin: 0.5rem 0 0 0;"><strong>Credit = Creditable Tips × 7.65%</strong></p>
+            </div>
+
+            <h2>Complete Example: Server</h2>
+
+            <div class="example-box">
+                <h3 style="color: #059669; margin-top: 0;">Sarah - Full-Time Server</h3>
+
+                <p><strong>Given Information:</strong></p>
+                <ul style="margin: 0.5rem 0 1.5rem 2rem;">
+                    <li>Hours worked in 2024: 2,080 hours (40 hours/week × 52 weeks)</li>
+                    <li>Cash wage: $2.13/hour</li>
+                    <li>Tips reported: $42,000</li>
+                </ul>
+
+                <p><strong>Step 1: Calculate total cash wages</strong></p>
+                <p style="margin-left: 1rem;">$2.13 × 2,080 = $4,430</p>
+
+                <p><strong>Step 2: Calculate minimum wage requirement</strong></p>
+                <p style="margin-left: 1rem;">$7.25 × 2,080 = $15,080</p>
+
+                <p><strong>Step 3: Determine the gap</strong></p>
+                <p style="margin-left: 1rem;">$15,080 - $4,430 = $10,650</p>
+
+                <p><strong>Step 4: Find creditable tips</strong></p>
+                <p style="margin-left: 1rem;">$42,000 - $10,650 = $31,350</p>
+
+                <p style="margin-bottom: 0;"><strong>Step 5: Calculate the credit</strong></p>
+                <p style="margin-left: 1rem; font-size: 1.2rem; color: #059669;"><strong>$31,350 × 7.65% = $2,398</strong></p>
+            </div>
+
+            <p><strong>Sarah generates $2,398 in FICA tip credits for your restaurant!</strong></p>
+
+            <h2>Example: Part-Time Bartender</h2>
+
+            <div class="example-box">
+                <h3 style="color: #059669; margin-top: 0;">Mike - Part-Time Bartender</h3>
+
+                <p><strong>Given Information:</strong></p>
+                <ul style="margin: 0.5rem 0 1.5rem 2rem;">
+                    <li>Hours worked in 2024: 1,040 hours (20 hours/week × 52 weeks)</li>
+                    <li>Cash wage: $5.00/hour</li>
+                    <li>Tips reported: $18,000</li>
+                </ul>
+
+                <p><strong>Calculation:</strong></p>
+                <ol style="margin-left: 2rem;">
+                    <li>Cash wages: $5.00 × 1,040 = $5,200</li>
+                    <li>Minimum wage requirement: $7.25 × 1,040 = $7,540</li>
+                    <li>Gap: $7,540 - $5,200 = $2,340</li>
+                    <li>Creditable tips: $18,000 - $2,340 = $15,660</li>
+                    <li><strong>Credit: $15,660 × 7.65% = $1,198</strong></li>
+                </ol>
+
+                <p style="margin-bottom: 0;"><strong>Mike generates $1,198 in credits, even working part-time!</strong></p>
+            </div>
+
+            <h2>Calculating for Your Entire Staff</h2>
+
+            <p>To find your total FICA Tip Credit, repeat this calculation for every tipped employee, then sum the results.</p>
+
+            <div class="example-box">
+                <h3 style="color: #059669; margin-top: 0;">Medium Restaurant Example</h3>
+                <p><strong>Staff breakdown:</strong></p>
+                <ul style="margin: 1rem 0;">
+                    <li>8 full-time servers (like Sarah): 8 × $2,398 = $19,184</li>
+                    <li>4 part-time servers (average $1,500 each): 4 × $1,500 = $6,000</li>
+                    <li>2 full-time bartenders (average $2,200 each): 2 × $2,200 = $4,400</li>
+                    <li>2 part-time bartenders (like Mike): 2 × $1,198 = $2,396</li>
+                    <li>3 bussers (average $800 each): 3 × $800 = $2,400</li>
+                </ul>
+                <p style="margin-bottom: 0; font-size: 1.3rem; color: #059669;"><strong>Total Annual Credit: $34,380</strong></p>
+            </div>
+
+            <h2>Common Calculation Mistakes</h2>
+
+            <div class="warning-box">
+                <h3 style="color: #B45309; margin-top: 0;">Mistake #1: Using State Minimum Wage</h3>
+                <p style="margin-bottom: 0;"><strong>Always use $7.25 (federal minimum wage)</strong> for the calculation, even if your state has a higher minimum wage. The credit is based on federal law.</p>
+            </div>
+
+            <div class="warning-box">
+                <h3 style="color: #B45309; margin-top: 0;">Mistake #2: Including Non-Tip Income</h3>
+                <p style="margin-bottom: 0;">Only tips count. Regular hourly wages, salaries, or bonuses don't generate credits—only reported tip income.</p>
+            </div>
+
+            <div class="warning-box">
+                <h3 style="color: #B45309; margin-top: 0;">Mistake #3: Forgetting Some Employees</h3>
+                <p style="margin-bottom: 0;">Include ALL tipped employees: servers, bartenders, bussers, food runners, hosts (if tipped), sommeliers, barbacks, etc.</p>
+            </div>
+
+            <div class="warning-box">
+                <h3 style="color: #B45309; margin-top: 0;">Mistake #4: Not Accounting for Actual Hours</h3>
+                <p style="margin-bottom: 0;">Use actual hours worked, not estimated or scheduled hours. Time clock records are essential for accurate calculations.</p>
+            </div>
+
+            <h2>Quick Estimation Method</h2>
+
+            <p>If you want a rough estimate without detailed calculations, use this rule of thumb:</p>
+
+            <div class="formula-box">
+                <h3 style="color: #7C3AED; margin-top: 0;">Quick Estimate Formula</h3>
+                <p style="text-align: center; font-size: 1.1rem; margin: 1rem 0;"><strong>Estimated Credit ≈ (Total Tips Reported × 7.65%) × 0.75</strong></p>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">The 0.75 factor accounts for the portion of tips that exceed the minimum wage threshold. This gives you a conservative ballpark estimate.</p>
+            </div>
+
+            <p><strong>Example:</strong> If your restaurant reported $500,000 in total tips:</p>
+            <ul>
+                <li>($500,000 × 7.65%) × 0.75 = $28,688 estimated credit</li>
+            </ul>
+
+            <p>This is just an approximation—actual calculation requires employee-by-employee detail.</p>
+
+            <h2>Multi-Year Calculation</h2>
+
+            <p>When claiming retroactively for multiple years, perform the calculation separately for each tax year:</p>
+
+            <ul>
+                <li><strong>2024:</strong> Use 2024 payroll data</li>
+                <li><strong>2023:</strong> Use 2023 payroll data</li>
+                <li><strong>2022:</strong> Use 2022 payroll data</li>
+                <li><strong>2021:</strong> Use 2021 payroll data</li>
+            </ul>
+
+            <p>Then sum all years for your total retroactive refund.</p>
+
+            <div class="cta-box">
+                <h3>Get an Exact Calculation</h3>
+                <p>Let our experts calculate your precise FICA tip credit amount—free assessment with no obligation.</p>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button">Get Free Calculation</a>
+            </div>
+
+            <h2>Using Form 8846</h2>
+
+            <p>The official IRS form for claiming this credit is <strong>Form 8846 - Credit for Employer Social Security and Medicare Taxes Paid on Certain Employee Tips</strong>.</p>
+
+            <p>The form walks through the same calculation we've outlined here, with separate sections for:</p>
+            <ul>
+                <li>Part I: Current year credit</li>
+                <li>Part II: Credit from pass-through entities</li>
+                <li>Part III: Employee-by-employee breakdown (if required)</li>
+            </ul>
+
+            <h2>Data You'll Need</h2>
+
+            <p>To perform accurate calculations, gather:</p>
+
+            <ul>
+                <li><strong>Form 941</strong> (quarterly payroll returns) showing tip income</li>
+                <li><strong>Payroll records</strong> with employee names, hours, wages, and tips</li>
+                <li><strong>Tip reports</strong> from employees (Form 4070 or POS data)</li>
+                <li><strong>W-2 forms</strong> showing total wages and tips</li>
+                <li><strong>Time and attendance records</strong> showing actual hours worked</li>
+            </ul>
+
+            <h2>Verification Checklist</h2>
+
+            <p>Before submitting your calculation, verify:</p>
+
+            <ul>
+                <li>☐ Used $7.25 as the minimum wage (not state minimum)</li>
+                <li>☐ Included all tipped employees</li>
+                <li>☐ Used actual hours worked (not estimated)</li>
+                <li>☐ Only included reported tips (not estimated or allocated)</li>
+                <li>☐ Applied 7.65% rate correctly</li>
+                <li>☐ Calculations match Form 941 tip totals</li>
+                <li>☐ W-2 tip amounts align with calculations</li>
+            </ul>
+
+            <h2>Professional Calculation Services</h2>
+
+            <p>While you can calculate this yourself, most restaurant owners prefer to work with specialists because:</p>
+
+            <ul>
+                <li><strong>Accuracy matters:</strong> Errors can delay refunds or trigger IRS questions</li>
+                <li><strong>Time savings:</strong> Let experts handle the detailed math</li>
+                <li><strong>Optimization:</strong> Specialists know how to maximize your credit within IRS rules</li>
+                <li><strong>Documentation:</strong> Proper support for IRS compliance</li>
+                <li><strong>Multi-year complexity:</strong> Retroactive calculations across multiple years require expertise</li>
+            </ul>
+
+            <p>At Tip Tax Partner, we handle all calculations, form preparation, and IRS filing—so you can focus on running your restaurant.</p>
+
+            <div class="cta-box">
+                <h3>Let Us Calculate It For You</h3>
+                <p>Free, no-obligation assessment of your exact FICA tip credit amount.</p>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button">Get Started</a>
+            </div>
+
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="../faq/how-much-can-i-claim.html" style="color: var(--primary-color);">How Much Can I Claim?</a></li>
+                <li><a href="../faq/documentation-needed.html" style="color: var(--primary-color);">Required Documentation</a></li>
+                <li><a href="complete-guide-fica-tip-credits-2025.html" style="color: var(--primary-color);">Complete Guide to FICA Tip Credits</a></li>
+                <li><a href="../faq/claiming-process.html" style="color: var(--primary-color);">The Claiming Process</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tip Tax Partner</h3>
+                    <p>📧 support@tipcreditpartners.com</p>
+                    <p>📞 1-800-TIP-CREDIT</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="../faq.html">FAQ</a>
+                    <a href="../blog.html">Blog</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tip Tax Partner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

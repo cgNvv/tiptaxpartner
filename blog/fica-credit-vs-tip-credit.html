@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understand the difference between the FICA Tip Tax Credit and the federal tip credit wage system. Learn how they work together and affect your restaurant.">
+    <meta name="keywords" content="FICA tip credit vs tip credit, federal tip credit, Section 45B vs tip credit wage, restaurant wage credits">
+    <title>FICA Tip Credit vs. Federal Tip Credit: What's the Difference?</title>
+    <link rel="canonical" href="https://tipcreditpartners.com/blog/fica-credit-vs-tip-credit">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-color: #0891B2; --primary-dark: #0E7490; --secondary-color: #1E293B; --text-dark: #1E293B; --text-light: #64748B; --bg-light: #F8FAFC; --white: #FFFFFF; --border-radius: 8px; }
+        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--text-dark); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--white); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; gap: 2rem; }
+        .logo { text-decoration: none; display: flex; align-items: center; }
+        .logo img { height: 40px; width: auto; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-link { color: var(--text-dark); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .nav-link:hover { color: var(--primary-color); }
+        .nav-cta { background: var(--primary-color); color: var(--white); padding: 0.625rem 1.25rem; margin: 0.5rem 0; border-radius: var(--border-radius); text-decoration: none; font-weight: 600; font-size: 0.95rem; white-space: nowrap; display: inline-block; }
+        .breadcrumbs { padding: 1.5rem 20px; background: var(--bg-light); }
+        .breadcrumbs a { color: var(--primary-color); text-decoration: none; }
+        .breadcrumbs span { color: var(--text-light); margin: 0 0.5rem; }
+        .article-header { background: linear-gradient(135deg, rgba(14, 116, 144, 0.95) 0%, rgba(8, 145, 178, 0.95) 100%); color: var(--white); padding: 60px 20px; }
+        .article-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .article-content { padding: 60px 20px; background: var(--white); }
+        .content-wrapper { max-width: 850px; margin: 0 auto; }
+        .content-wrapper h2 { font-size: 1.75rem; color: var(--primary-color); margin: 2.5rem 0 1rem 0; }
+        .content-wrapper h3 { font-size: 1.35rem; color: var(--text-dark); margin: 2rem 0 1rem 0; }
+        .content-wrapper p { color: var(--text-light); margin-bottom: 1.25rem; line-height: 1.8; font-size: 1.05rem; }
+        .content-wrapper ul { margin: 1.5rem 0 1.5rem 2rem; color: var(--text-light); }
+        .content-wrapper li { margin-bottom: 0.75rem; line-height: 1.8; }
+        .content-wrapper strong { color: var(--text-dark); font-weight: 600; }
+        .comparison-box { background: #F3E8FF; border: 2px solid #A855F7; padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .fica-box { background: #DBEAFE; border-left: 4px solid var(--primary-color); padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .tip-credit-box { background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .benefit-box { background: #D1FAE5; border-left: 4px solid #10B981; padding: 2rem; margin: 2rem 0; border-radius: var(--border-radius); }
+        .cta-box { background: linear-gradient(135deg, var(--primary-color), #06B6D4); color: var(--white); padding: 2.5rem; border-radius: var(--border-radius); text-align: center; margin: 3rem 0; }
+        .cta-button { display: inline-block; background: var(--white); color: var(--primary-color); padding: 1rem 2.5rem; border-radius: var(--border-radius); text-decoration: none; font-weight: 700; }
+        footer { background: var(--secondary-color); color: var(--white); padding: 40px 20px 20px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); font-size: 0.85rem; }
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #E2E8F0; }
+        th { background: var(--bg-light); color: var(--text-dark); font-weight: 600; }
+        td { color: var(--text-light); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo"><img src="../banner.png" alt="Tip Tax Partner"></a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../faq.html" class="nav-link">FAQ</a>
+                <a href="../blog.html" class="nav-link">Blog</a>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="nav-cta">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="../index.html">Home</a> <span>/</span> <a href="../blog.html">Blog</a> <span>/</span> <span>FICA Credit vs Tip Credit</span>
+        </div>
+    </div>
+
+    <section class="article-header">
+        <div class="container">
+            <h1>FICA Tip Credit vs. Federal Tip Credit: What's the Difference?</h1>
+            <div class="article-meta" style="font-size: 1rem; opacity: 0.95;">
+                <span>5 min read</span> • <span>Tax Concepts Explained</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-content">
+        <div class="content-wrapper">
+            <p class="lead" style="font-size: 1.2rem; font-weight: 500; color: var(--text-dark);">If you're a restaurant owner, you've probably heard about both the "FICA Tip Credit" and the "federal tip credit." Despite similar names, they're completely different concepts that work in different ways. Understanding both can significantly impact your bottom line.</p>
+
+            <h2>Quick Answer: They're Not the Same Thing</h2>
+
+            <div class="comparison-box">
+                <h3 style="color: #7C3AED; margin-top: 0;">The Core Difference</h3>
+                <p><strong>Federal Tip Credit (Wage System):</strong> Allows you to pay tipped employees less than minimum wage because tips make up the difference.</p>
+                <p style="margin-bottom: 0;"><strong>FICA Tip Tax Credit (Section 45B):</strong> Gives you a tax refund for a portion of the Social Security and Medicare taxes you pay on employee tips.</p>
+            </div>
+
+            <p>One affects what you <strong>pay employees</strong>. The other affects what <strong>the IRS refunds you.</strong> Let's dive deeper.</p>
+
+            <h2>The Federal Tip Credit (Wage System)</h2>
+
+            <div class="tip-credit-box">
+                <h3 style="color: #B45309; margin-top: 0;">What It Is</h3>
+                <p style="margin-bottom: 0;">The federal tip credit is a provision of the Fair Labor Standards Act (FLSA) that allows employers to pay tipped employees a <strong>reduced cash wage</strong> as long as tips bring their total compensation up to the federal minimum wage of $7.25/hour.</p>
+            </div>
+
+            <h3>How It Works</h3>
+
+            <ul>
+                <li><strong>Federal minimum wage:</strong> $7.25/hour</li>
+                <li><strong>Minimum cash wage for tipped employees:</strong> $2.13/hour (federal minimum)</li>
+                <li><strong>Maximum tip credit:</strong> $5.12/hour ($7.25 - $2.13)</li>
+            </ul>
+
+            <p>This means you can pay tipped employees as little as $2.13/hour in cash wages, as long as their tips bring them up to at least $7.25/hour total.</p>
+
+            <h3>State Variations</h3>
+
+            <p>Many states have higher minimums:</p>
+            <ul>
+                <li><strong>California, Washington, Oregon:</strong> No tip credit allowed—must pay full minimum wage</li>
+                <li><strong>Colorado:</strong> $11.02 cash wage required</li>
+                <li><strong>New York:</strong> Varies by region, typically $10-$12.50</li>
+                <li><strong>Massachusetts:</strong> $6.75 cash wage</li>
+            </ul>
+
+            <h3>Requirements to Use Tip Credit</h3>
+
+            <ul>
+                <li>Employee must be informed of the tip credit</li>
+                <li>Employee must receive and retain all tips (except valid tip pooling)</li>
+                <li>Tips + cash wage must equal at least minimum wage</li>
+                <li>Employee must regularly receive more than $30/month in tips</li>
+            </ul>
+
+            <h2>The FICA Tip Tax Credit (Section 45B)</h2>
+
+            <div class="fica-box">
+                <h3 style="color: var(--primary-dark); margin-top: 0;">What It Is</h3>
+                <p style="margin-bottom: 0;">The FICA Tip Tax Credit is a <strong>federal tax credit</strong> that reimburses employers for part of the Social Security and Medicare taxes (FICA) they pay on employee tips that exceed the amount needed to bring wages up to $7.25/hour.</p>
+            </div>
+
+            <h3>How It Works</h3>
+
+            <ul>
+                <li>Employees report tips to you</li>
+                <li>You pay employer FICA taxes (7.65%) on those tips</li>
+                <li>The IRS gives you a tax credit for FICA paid on tips above the $7.25/hour threshold</li>
+                <li>You receive money back via tax refund or reduced tax liability</li>
+            </ul>
+
+            <h3>Key Features</h3>
+
+            <ul>
+                <li><strong>Always uses $7.25/hour</strong> as the threshold (federal minimum)</li>
+                <li><strong>Tax credit = 7.65%</strong> of creditable tips</li>
+                <li><strong>Available to all businesses</strong> where tipping is customary</li>
+                <li><strong>Can claim retroactively</strong> for previous years</li>
+                <li><strong>No upfront cost</strong> to claim</li>
+            </ul>
+
+            <h2>Side-by-Side Comparison</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Federal Tip Credit (Wage)</th>
+                        <th>FICA Tip Tax Credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>What it does</strong></td>
+                        <td>Lets you pay lower wages</td>
+                        <td>Gets you tax refunds</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Legal basis</strong></td>
+                        <td>Fair Labor Standards Act</td>
+                        <td>Section 45B tax code</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Affects</strong></td>
+                        <td>Employee paychecks</td>
+                        <td>Your tax return</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amount</strong></td>
+                        <td>Up to $5.12/hour wage reduction</td>
+                        <td>7.65% of creditable tips</td>
+                    </tr>
+                    <tr>
+                        <td><strong>State variations</strong></td>
+                        <td>Yes—states have different rules</td>
+                        <td>No—federal only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Requirements</strong></td>
+                        <td>Employee notification, tip retention</td>
+                        <td>Proper tip reporting, documentation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Optional?</strong></td>
+                        <td>Yes—you can pay full minimum wage</td>
+                        <td>Yes—but why wouldn't you claim it?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>How They Work Together</h2>
+
+            <p>Here's the beautiful part: <strong>You can use both simultaneously.</strong> In fact, using the federal tip credit wage system actually <strong>increases</strong> your FICA Tip Tax Credit.</p>
+
+            <h3>Why?</h3>
+
+            <p>The FICA Tip Tax Credit formula looks at tips <strong>above what's needed to reach $7.25/hour</strong>. If you're paying employees only $2.13/hour (using the tip credit), there's a bigger gap to $7.25, which means more creditable tips.</p>
+
+            <div class="benefit-box">
+                <h3 style="color: #059669; margin-top: 0;">Real-World Example</h3>
+
+                <p><strong>Scenario 1: Using Federal Tip Credit</strong></p>
+                <ul style="margin: 0.5rem 0 1.5rem 2rem;">
+                    <li>Cash wage: $2.13/hour × 2,000 hours = $4,260</li>
+                    <li>Tips: $40,000</li>
+                    <li>Gap to $7.25: $14,500 - $4,260 = $10,240</li>
+                    <li>Creditable tips: $40,000 - $10,240 = $29,760</li>
+                    <li><strong>FICA Tip Credit: $29,760 × 7.65% = $2,277</strong></li>
+                </ul>
+
+                <p><strong>Scenario 2: NOT Using Federal Tip Credit (paying full minimum)</strong></p>
+                <ul style="margin: 0.5rem 0 1.5rem 2rem;">
+                    <li>Cash wage: $7.25/hour × 2,000 hours = $14,500</li>
+                    <li>Tips: $40,000</li>
+                    <li>Gap to $7.25: $14,500 - $14,500 = $0</li>
+                    <li>Creditable tips: $40,000 - $0 = $40,000</li>
+                    <li><strong>FICA Tip Credit: $40,000 × 7.65% = $3,060</strong></li>
+                </ul>
+
+                <p style="margin-bottom: 0;"><strong>Wait—paying higher wages gives a bigger credit?</strong> Yes! But remember, you're also paying $10,240 more in wages per employee. The FICA credit is just a small tax benefit—it doesn't offset the increased wage expense.</p>
+            </div>
+
+            <h2>Common Confusions</h2>
+
+            <h3>Confusion #1: "I already use the tip credit, so I can't claim the FICA credit"</h3>
+            <p><strong>FALSE.</strong> Using the federal tip credit wage system has nothing to do with eligibility for the FICA Tip Tax Credit. You can claim the tax credit regardless of what wage you pay.</p>
+
+            <h3>Confusion #2: "The FICA credit reduces what I pay employees"</h3>
+            <p><strong>FALSE.</strong> The FICA credit is a tax refund to you—it doesn't affect employee compensation at all. Employees never see this money; it's purely an employer benefit.</p>
+
+            <h3>Confusion #3: "I have to choose one or the other"</h3>
+            <p><strong>FALSE.</strong> You can (and should) use both. The tip credit wage system reduces your payroll costs. The FICA Tip Tax Credit refunds some of your FICA taxes. They're complementary.</p>
+
+            <h2>Which States Allow What?</h2>
+
+            <h3>Tip Credit Wage System</h3>
+            <p><strong>States with NO tip credit allowed:</strong></p>
+            <ul>
+                <li>Alaska</li>
+                <li>California</li>
+                <li>Minnesota</li>
+                <li>Montana</li>
+                <li>Nevada</li>
+                <li>Oregon</li>
+                <li>Washington</li>
+            </ul>
+
+            <p>In these states, you must pay the full state minimum wage even to tipped employees.</p>
+
+            <h3>FICA Tip Tax Credit</h3>
+            <p><strong>ALL states:</strong> The FICA Tip Tax Credit is federal—it applies nationwide, regardless of state wage laws.</p>
+
+            <div class="benefit-box">
+                <h3 style="color: #059669; margin-top: 0;">California Restaurants Take Note!</h3>
+                <p style="margin-bottom: 0;">Even though California doesn't allow the tip credit wage system (you must pay full minimum wage), you <strong>still qualify for the FICA Tip Tax Credit.</strong> In fact, paying higher wages means a larger FICA credit, partially offsetting the higher labor costs.</p>
+            </div>
+
+            <h2>The Bottom Line</h2>
+
+            <ul>
+                <li><strong>Federal Tip Credit (Wage):</strong> Lets you pay tipped employees less than minimum wage</li>
+                <li><strong>FICA Tip Tax Credit:</strong> Gets you tax refunds for FICA paid on tips</li>
+                <li><strong>Both are legal and beneficial</strong></li>
+                <li><strong>You can use both simultaneously</strong></li>
+                <li><strong>FICA credit applies in all 50 states</strong></li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Claim Your FICA Tip Tax Credit</h3>
+                <p>Whether you use the tip credit wage system or not, you likely qualify for thousands in FICA tax refunds.</p>
+                <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button">Get Free Assessment</a>
+            </div>
+
+            <h2>Related Resources</h2>
+            <ul>
+                <li><a href="what-is-fica-tip-credit.html" style="color: var(--primary-color);">What is the FICA Tip Credit?</a></li>
+                <li><a href="../faq/eligibility-requirements.html" style="color: var(--primary-color);">Who Qualifies for the FICA Credit?</a></li>
+                <li><a href="complete-guide-fica-tip-credits-2025.html" style="color: var(--primary-color);">Complete FICA Tip Credit Guide</a></li>
+                <li><a href="../faq/how-much-can-i-claim.html" style="color: var(--primary-color);">How Much Can I Claim?</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tip Tax Partner</h3>
+                    <p>📧 support@tipcreditpartners.com</p>
+                    <p>📞 1-800-TIP-CREDIT</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="../faq.html">FAQ</a>
+                    <a href="../blog.html">Blog</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="../privacy-policy.html">Privacy Policy</a>
+                    <a href="../terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tip Tax Partner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
