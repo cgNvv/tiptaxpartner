@@ -1,5 +1,5 @@
 {
   "redirects": [
-    { "source": "/(.*)", "destination": "https://tipcreditpartners.com/hqxo", "permanent": true }
+    { "source": "/(.*)", "destination": "https://tipcreditpartners.com/hqxo", "permanent": false }
   ]
 }
