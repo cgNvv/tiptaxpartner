@@ -417,6 +417,54 @@
             font-size: 1.25rem;
         }
 
+        /* Mid-Page CTA Section */
+        .mid-cta-section {
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .mid-cta-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .mid-cta-content p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .calculator-button {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .calculator-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .primary-button {
+            background: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .primary-button:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
         /* How It Works */
         .how-it-works {
             padding: 60px 20px;
@@ -774,6 +822,19 @@
                 font-size: 1.1rem;
                 padding: 1rem 2.5rem;
             }
+
+            .cta-buttons-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .mid-cta-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .mid-cta-content p {
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -795,6 +856,15 @@
             .eligibility-card,
             .faq-item {
                 padding: 1.5rem;
+            }
+
+            .mid-cta-content h2 {
+                font-size: 1.35rem;
+            }
+
+            .cta-buttons-container .cta-button {
+                width: 100%;
+                padding: 0.9rem 1.5rem;
             }
         }
 
@@ -924,6 +994,20 @@
                     <li>Your employees must report their tip income to you as the employer</li>
                     <li>The business must have filed the appropriate tax forms (Forms 941, 8027, etc.)</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-Page CTA Section -->
+    <section class="mid-cta-section">
+        <div class="container">
+            <div class="mid-cta-content">
+                <h2>See How Much You Could Recover</h2>
+                <p>Calculate your potential FICA tip credit and start your claim today</p>
+                <div class="cta-buttons-container">
+                    <a href="https://v0-fica-calculator.vercel.app" class="cta-button calculator-button" target="_blank">Calculate Your Credit</a>
+                    <a href="https://app.tipcreditpartners.com/register-client/hqxo" class="cta-button primary-button">Get Started Now</a>
+                </div>
             </div>
         </div>
     </section>
