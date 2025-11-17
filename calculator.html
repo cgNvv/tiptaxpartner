@@ -183,7 +183,7 @@
 
         /* Input Groups */
         .input-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .input-group label {
@@ -192,6 +192,45 @@
             color: var(--text-dark);
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
+        }
+
+        .input-helper {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .calculator-intro {
+            background: rgba(8, 145, 178, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .calculator-intro h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+        }
+
+        .calculator-intro p {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .calculator-intro ul {
+            margin-left: 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .calculator-intro ul li {
+            margin-bottom: 0.25rem;
         }
 
         .input-group input {
@@ -253,6 +292,14 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             display: block;
+        }
+
+        .output-explanation {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            font-style: italic;
+            line-height: 1.4;
         }
 
         .output-value {
@@ -478,19 +525,27 @@
                 <div class="inputs-section">
                     <h2 class="section-title">Calculator Inputs</h2>
 
-                    <div class="input-group">
-                        <label for="locations">Number of Restaurant Locations</label>
-                        <input type="number" id="locations" value="1" min="1" step="1">
+                    <div class="calculator-intro">
+                        <h3>How to Use This Calculator</h3>
+                        <p>Enter your business information below to estimate your potential FICA Tip Credit under IRS Section 45B. All fields update in real-time.</p>
                     </div>
 
                     <div class="input-group">
-                        <label for="servers">Number of Full-Time Servers</label>
+                        <label for="locations">Number of Restaurant Locations</label>
+                        <input type="number" id="locations" value="1" min="1" step="1">
+                        <div class="input-helper">How many physical locations does your business operate? Enter the total number of restaurants, bars, or hospitality venues you own.</div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="servers">Number of Full-Time Servers (per location)</label>
                         <input type="number" id="servers" value="10" min="1" step="1">
+                        <div class="input-helper">Average number of tipped employees at each location. Include servers, bartenders, bussers, and any staff receiving tips.</div>
                     </div>
 
                     <div class="input-group">
                         <label for="hoursPerMonth">Hours Worked per Month</label>
                         <input type="number" id="hoursPerMonth" value="173" min="1" step="1">
+                        <div class="input-helper">Average monthly hours per employee. Full-time is typically ~173 hours/month (40 hrs/week × 4.33 weeks).</div>
                     </div>
 
                     <div class="input-group">
@@ -499,6 +554,7 @@
                             <span class="input-prefix">$</span>
                             <input type="number" id="cashWage" value="8.00" min="0" step="0.01">
                         </div>
+                        <div class="input-helper">The hourly base wage you pay before tips. This is the amount shown on paychecks, not including tip income.</div>
                     </div>
 
                     <div class="input-group">
@@ -507,6 +563,7 @@
                             <input type="number" id="tipsPct" value="60" min="0" max="100" step="1">
                             <span class="input-suffix">%</span>
                         </div>
+                        <div class="input-helper">What percentage of your servers' total income comes from tips? Most restaurants see 50-70%. If a server earns $3,000/month and $1,800 is tips, that's 60%.</div>
                     </div>
 
                     <div class="input-group">
@@ -515,41 +572,51 @@
                             <span class="input-prefix">$</span>
                             <input type="number" id="minWageBasis" value="5.15" min="0" step="0.01">
                         </div>
+                        <div class="input-helper">IRS baseline for tip credit calculation. The federal minimum is $5.15/hr. Leave at default unless advised by your tax professional.</div>
                     </div>
                 </div>
 
                 <!-- Outputs Section -->
                 <div class="outputs-section">
-                    <h2 class="section-title">Estimated Credit</h2>
+                    <h2 class="section-title">Your Results</h2>
 
                     <div class="output-group">
-                        <span class="output-label">Estimated 3-Year FICA Refund/Credit</span>
+                        <span class="output-label">Total Estimated 3-Year FICA Tax Credit</span>
                         <div class="output-value large" id="totalCredit">$0.00</div>
+                    </div>
+
+                    <div class="calculator-intro" style="margin-top: 1.5rem;">
+                        <p style="margin: 0;"><strong>💡 What does this mean?</strong> This is the total tax credit you could claim across all your servers and locations over a 3-year period. This credit directly reduces your tax liability dollar-for-dollar.</p>
                     </div>
 
                     <hr class="output-section-divider">
 
                     <div class="output-subsection">
                         <h3 class="output-subsection-title">Per Server Breakdown</h3>
+                        <p class="input-helper" style="margin-bottom: 1.25rem;">These numbers show the credit calculation for a single server at one location.</p>
 
                         <div class="output-group">
                             <span class="output-label">Monthly Tips</span>
                             <div class="output-value" id="monthlyTips">$0.00</div>
+                            <div class="output-explanation">Total tips received by each server per month</div>
                         </div>
 
                         <div class="output-group">
                             <span class="output-label">Tips Not Creditable</span>
                             <div class="output-value" id="nonCreditableTips">$0.00</div>
+                            <div class="output-explanation">Tips below the IRS minimum wage basis that don't qualify for the credit</div>
                         </div>
 
                         <div class="output-group">
                             <span class="output-label">Creditable Tips</span>
                             <div class="output-value" id="creditableTips">$0.00</div>
+                            <div class="output-explanation">Tips above the minimum wage threshold that qualify for the FICA credit</div>
                         </div>
 
                         <div class="output-group">
                             <span class="output-label">Monthly Credit</span>
                             <div class="output-value" id="monthlyCredit">$0.00</div>
+                            <div class="output-explanation">Your tax credit per server per month (7.65% of creditable tips)</div>
                         </div>
 
                         <div class="output-group">
@@ -567,6 +634,7 @@
 
                     <div class="output-subsection">
                         <h3 class="output-subsection-title">Server Income Details</h3>
+                        <p class="input-helper" style="margin-bottom: 1.25rem;">Based on your inputs, here's what your servers are earning (wages + tips combined).</p>
 
                         <div class="output-group">
                             <span class="output-label">Monthly Income</span>
