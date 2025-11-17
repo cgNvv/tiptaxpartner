@@ -338,6 +338,65 @@
             margin-bottom: 1rem;
         }
 
+        .output-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .output-grid .output-group {
+            margin-bottom: 0;
+        }
+
+        .output-grid .output-value {
+            font-size: 1.1rem;
+            padding: 0.75rem 1rem;
+        }
+
+        .output-grid .output-label {
+            font-size: 0.8rem;
+        }
+
+        .output-grid .output-explanation {
+            font-size: 0.75rem;
+            margin-top: 0.35rem;
+        }
+
+        .output-compact {
+            background: var(--white);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(8, 145, 178, 0.1);
+        }
+
+        .output-compact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .output-stat {
+            text-align: center;
+        }
+
+        .output-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .output-stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
         /* Disclaimer */
         .disclaimer {
             background: rgba(8, 145, 178, 0.05);
@@ -494,6 +553,15 @@
             .nav-links {
                 flex-wrap: wrap;
             }
+
+            .output-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .output-compact-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -592,68 +660,67 @@
                     <hr class="output-section-divider">
 
                     <div class="output-subsection">
-                        <h3 class="output-subsection-title">Per Server Breakdown</h3>
-                        <p class="input-helper" style="margin-bottom: 1.25rem;">These numbers show the credit calculation for a single server at one location.</p>
+                        <h3 class="output-subsection-title">Key Credit Metrics (Per Server)</h3>
 
-                        <div class="output-group">
-                            <span class="output-label">Monthly Tips</span>
-                            <div class="output-value" id="monthlyTips">$0.00</div>
-                            <div class="output-explanation">Total tips received by each server per month</div>
+                        <div class="output-compact-grid">
+                            <div class="output-stat">
+                                <span class="output-stat-label">Monthly Tips</span>
+                                <div class="output-stat-value" id="monthlyTips">$0.00</div>
+                            </div>
+                            <div class="output-stat">
+                                <span class="output-stat-label">Creditable Tips</span>
+                                <div class="output-stat-value" id="creditableTips">$0.00</div>
+                            </div>
+                            <div class="output-stat">
+                                <span class="output-stat-label">Monthly Credit</span>
+                                <div class="output-stat-value" id="monthlyCredit">$0.00</div>
+                            </div>
                         </div>
 
-                        <div class="output-group">
-                            <span class="output-label">Tips Not Creditable</span>
-                            <div class="output-value" id="nonCreditableTips">$0.00</div>
-                            <div class="output-explanation">Tips below the IRS minimum wage basis that don't qualify for the credit</div>
-                        </div>
+                        <div class="output-grid">
+                            <div class="output-group">
+                                <span class="output-label">Tips Not Creditable</span>
+                                <div class="output-value" id="nonCreditableTips">$0.00</div>
+                                <div class="output-explanation">Below IRS minimum threshold</div>
+                            </div>
 
-                        <div class="output-group">
-                            <span class="output-label">Creditable Tips</span>
-                            <div class="output-value" id="creditableTips">$0.00</div>
-                            <div class="output-explanation">Tips above the minimum wage threshold that qualify for the FICA credit</div>
-                        </div>
-
-                        <div class="output-group">
-                            <span class="output-label">Monthly Credit</span>
-                            <div class="output-value" id="monthlyCredit">$0.00</div>
-                            <div class="output-explanation">Your tax credit per server per month (7.65% of creditable tips)</div>
-                        </div>
-
-                        <div class="output-group">
-                            <span class="output-label">Annual Credit per Server</span>
-                            <div class="output-value" id="annualCredit">$0.00</div>
-                        </div>
-
-                        <div class="output-group">
-                            <span class="output-label">3-Year Credit per Server</span>
-                            <div class="output-value" id="threeYearCredit">$0.00</div>
+                            <div class="output-group">
+                                <span class="output-label">Annual Credit</span>
+                                <div class="output-value" id="annualCredit">$0.00</div>
+                                <div class="output-explanation">Per server, per year</div>
+                            </div>
                         </div>
                     </div>
 
                     <hr class="output-section-divider">
 
                     <div class="output-subsection">
-                        <h3 class="output-subsection-title">Server Income Details</h3>
-                        <p class="input-helper" style="margin-bottom: 1.25rem;">Based on your inputs, here's what your servers are earning (wages + tips combined).</p>
+                        <h3 class="output-subsection-title">Additional Details</h3>
 
-                        <div class="output-group">
-                            <span class="output-label">Monthly Income</span>
-                            <div class="output-value" id="monthlyIncome">$0.00</div>
-                        </div>
+                        <div class="output-grid">
+                            <div class="output-group">
+                                <span class="output-label">Server Annual Income</span>
+                                <div class="output-value" id="annualIncome">$0.00</div>
+                                <div class="output-explanation">Wages + tips combined</div>
+                            </div>
 
-                        <div class="output-group">
-                            <span class="output-label">Annual Income</span>
-                            <div class="output-value" id="annualIncome">$0.00</div>
-                        </div>
+                            <div class="output-group">
+                                <span class="output-label">Effective Hourly Rate</span>
+                                <div class="output-value" id="effectiveHourlyRate">$0.00/hr</div>
+                                <div class="output-explanation">Including tip income</div>
+                            </div>
 
-                        <div class="output-group">
-                            <span class="output-label">Effective Hourly Rate</span>
-                            <div class="output-value" id="effectiveHourlyRate">$0.00/hr</div>
-                        </div>
+                            <div class="output-group">
+                                <span class="output-label">3-Year Credit (Per Server)</span>
+                                <div class="output-value" id="threeYearCredit">$0.00</div>
+                                <div class="output-explanation">Over 3-year period</div>
+                            </div>
 
-                        <div class="output-group">
-                            <span class="output-label">Servers Needed for $100k Credit</span>
-                            <div class="output-value" id="serversFor100k">0</div>
+                            <div class="output-group">
+                                <span class="output-label">Servers for $100k</span>
+                                <div class="output-value" id="serversFor100k">0</div>
+                                <div class="output-explanation">To reach $100k credit</div>
+                            </div>
                         </div>
                     </div>
                 </div>
