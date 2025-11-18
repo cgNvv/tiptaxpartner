@@ -95,11 +95,15 @@
             background: var(--primary-color);
             color: var(--white);
             padding: 0.625rem 1.25rem;
+            margin: 0.5rem 0;
             border-radius: var(--border-radius);
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
             font-size: 0.95rem;
+            white-space: nowrap;
+            display: inline-block;
+            line-height: normal;
         }
 
         .nav-cta:hover {
@@ -265,6 +269,10 @@
 
         .input-with-prefix input {
             padding-left: 2rem;
+        }
+
+        .input-with-suffix {
+            position: relative;
         }
 
         .input-suffix {
