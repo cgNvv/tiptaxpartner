@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '700681256426360');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=700681256426360&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta name="description" content="Privacy Policy for Tip Tax Partner. Learn how we protect your data and handle your information when helping you claim FICA tip tax credits.">
     <meta name="robots" content="index, follow">
     <title>Privacy Policy | Tip Tax Partner - FICA Tip Credit Experts</title>
@@ -473,5 +492,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Facebook Conversion API tracking function
+        async function trackFacebookConversion(eventName, eventData = {}) {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', eventName, eventData);
+            }
+            const pixelId = '700681256426360';
+            const accessToken = 'EAAOZAHtYgC6EBPZCWRSGMkR9pcZAFZCdwhZCiqsuH4juBeOFcbEZB7ZATsSEXeNoJrr5DEkmhWQg6xgWi50fm5rcQfjqCM92HZATJR28zaIGrdtM5hPDmk2Bu9jyCjzAlO6cqwW8x6visjolNFEJRTmtOgzuSG3oLJdjeLjMXZBBzZBm0HJZA0iQ3sSZBhPZCJwNGJIg7kQZDZD';
+            const payload = {
+                data: [{
+                    event_name: eventName,
+                    event_time: Math.floor(Date.now() / 1000),
+                    event_source_url: window.location.href,
+                    action_source: 'website',
+                    user_data: { client_user_agent: navigator.userAgent },
+                    custom_data: eventData
+                }]
+            };
+            try {
+                await fetch(`https://graph.facebook.com/v18.0/${pixelId}/events?access_token=${accessToken}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+            } catch (error) {
+                console.log('Conversion API tracking:', error);
+            }
+        }
+        document.querySelectorAll('a[href*="app.tipcreditpartners.com/register"]').forEach(button => {
+            button.addEventListener('click', function(e) {
+                trackFacebookConversion('Lead', { content_name: 'Get Your Money Back CTA', content_category: 'Registration' });
+            });
+        });
+    </script>
 </body>
 </html>
